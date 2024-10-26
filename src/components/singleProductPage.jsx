@@ -59,12 +59,12 @@ function SingleProductPage() {
   return (
     <>
       <span
-        className=""
+        className="path"
         style={{
           display: "inline-block",
           fontSize: "15px",
           marginTop: "70px",
-          marginLeft: "80px",
+          marginLeft: "6.5%",
           padding: "30px 0px",
         }}
       >

@@ -10,7 +10,7 @@ function NewArrivals() {
     <>
       <div className="newArrival text-center">
         <h1 className='text-center'>New Arrivals</h1>
-        <hr/>
+        <hr />
         <div className="container mt-4">
           <div className="row">
             {products.slice(0, 8).map((product) => (

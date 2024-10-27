@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faUser} from '@fortawesome/free-solid-svg-icons';
-import Home from './home'
 
 function Header() {
   return (

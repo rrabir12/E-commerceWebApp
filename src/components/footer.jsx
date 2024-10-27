@@ -1,8 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'; // Correct imports
-import { faMap, faPaperPlane, faPhone, faAngleRight } from '@fortawesome/free-solid-svg-icons'; // Solid icons
+import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'; 
+import { faMap, faPaperPlane, faPhone, faAngleRight } from '@fortawesome/free-solid-svg-icons'; 
 
 function Footer() {
   return (

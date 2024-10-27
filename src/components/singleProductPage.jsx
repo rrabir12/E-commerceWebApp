@@ -77,16 +77,28 @@ function SingleProductPage() {
         <div className="container">
           <div className="row">
             {/* Product Images */}
-            <div className="col-lg-7 d-flex">
+            <div className="col-lg-7 imgs d-flex">
               <div className="small-img-group d-flex flex-column me-3">
-                {[...Array(4)].map((_, index) => (
-                  <img
-                    key={index}
-                    className="img-fluid small-img"
-                    src={product.image}
-                    alt={`thumbnail${index + 1}`}
-                  />
-                ))}
+              <img
+                  className="img-fluid small-img"
+                  src={product.image}
+                  alt={'thumbna1'}
+                />
+                <img
+                  className="img-fluid small-img"
+                  src={product.image}
+                  alt={'thumbnail2'}
+                />
+                <img
+                  className="img-fluid small-img"
+                  src={product.image}
+                  alt={'thumbnail3'}
+                />
+                <img
+                  className="img-fluid small-img"
+                  src={product.image}
+                  alt={'thumbnail4'}
+                />
               </div>
               <div className="main-img-container">
                 <img
@@ -100,7 +112,7 @@ function SingleProductPage() {
             {/* Product Details */}
             <div className="col-lg-5">
               <span style={{ color: "#aeacac", fontSize: "14px" }}>
-                Men / Women
+                {product.category}
               </span>
               <h1 className="product-title mb-3 mt-3">{product.title}</h1>
               <p className="product-description text-muted mb-4">
@@ -115,7 +127,7 @@ function SingleProductPage() {
               <div className="price-review mb-4 d-flex">
                 <h4 className="price mb-2 me-5">Rs. {product.price}</h4>
                 <span className="review text-secondary">
-                  {[...Array(5)].map((_, i) => (
+                  {[...Array(5)].map((item, i) => (
                     <FontAwesomeIcon
                       key={i}
                       icon={faStar}
@@ -125,6 +137,7 @@ function SingleProductPage() {
                       }}
                     />
                   ))}
+                  <span className="ms-3" style={{color: "#ff414d"}}>{product.rating.count} rating</span>
                 </span>
               </div>
 
@@ -204,7 +217,7 @@ function SingleProductPage() {
                       
                     </div>
                     <span className="ms-auto text-warning">
-                      {[...Array(5)].map((index, i) => (
+                      {[...Array(5)].map((item, i) => (
                         <FontAwesomeIcon
                           key={i}
                           icon={faStar}
